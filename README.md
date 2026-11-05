@@ -1,31 +1,101 @@
-# Adobe XD
+<h1 align="center">
+  <img src="assets/img/icon-sm.png" width="72" alt="EMCP Tools logo"><br>
+  MCP Tools for WordPress &amp; Page Builders
+</h1>
 
-## Introduction
+<div align="center">
 
-Adobe XD is a desktop application for designing user interfaces and building interactive prototypes for websites, mobile applications, and other digital products. It combines vector-based screen design, reusable components, layout tools, and prototyping features in one workspace. Product designers use it to translate requirements and wireframes into visual interfaces, while developers and stakeholders use prototypes to review navigation, interaction logic, and screen behavior before implementation.
+[![Version](https://img.shields.io/github/v/release/msrbuilds/elementor-mcp?label=version&color=blue)](https://github.com/msrbuilds/elementor-mcp/releases)
+[![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green.svg)](LICENSE)
+[![PHP](https://img.shields.io/badge/PHP-%3E%3D8.1-8892BF.svg)](https://php.net)
+[![WordPress](https://img.shields.io/badge/WordPress-%3E%3D6.9-21759B.svg)](https://wordpress.org)
+[![Free MCP Tools](https://img.shields.io/badge/Free_MCP_Tools-244-orange.svg)](https://emcptools.com/docs/tools/overview/)
+[![Total MCP Tools with Pro](https://img.shields.io/badge/Total_MCP_Tools_with_Pro-578-blue.svg)](https://emcptools.com/free-vs-pro/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![GitHub Issues](https://img.shields.io/github/issues/msrbuilds/elementor-mcp)](https://github.com/msrbuilds/elementor-mcp/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/msrbuilds/elementor-mcp?style=social)](https://github.com/msrbuilds/elementor-mcp)
 
-A typical XD project contains one or more artboards. Each artboard represents a screen, page, or interface state and can be sized for a target device or custom viewport. Designers add shapes, text, images, icons, and imported assets, then arrange them with alignment, spacing, and responsive resizing controls. Repeated interface elements can be converted into components, allowing a shared design element to be updated consistently across multiple screens.
+**[Docs](https://emcptools.com/docs/) · [Integrations](https://emcptools.com/integrations/) · [Changelog](https://emcptools.com/changelog) · [Pro](https://emcptools.com/pricing) [Download from WordPress](https://wordpress.org/plugins/emcp-lite/)**
 
-The application also supports interactive prototyping. Designers connect artboards, define triggers such as taps or clicks, and assign transitions or overlays to demonstrate user flows. This makes it possible to validate a checkout sequence, onboarding process, or navigation structure without writing application code. Preview modes allow the prototype to be tested on a desktop or compatible mobile device.
+</div>
 
-For IT teams, XD is most useful during requirements clarification, interface specification, and early usability review. It provides a visual artifact that product managers, designers, and engineers can discuss together. The resulting screens and interaction examples help reduce ambiguity before frontend development begins.
+Turn your WordPress site into something an AI agent can actually operate.
 
-## Interface Design and Component Management
+EMCP Tools is a WordPress plugin that exposes your site as **[MCP](https://modelcontextprotocol.io/) tools**, so Claude, Cursor, and any other MCP client can build Elementor pages, write content, manage plugins and users, audit performance and security, and drive the plugins you already run. It runs on the [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/): EMCP Tools includes a copy, and uses the official plugin instead when it is active.
 
-Artboards provide the structural foundation of an XD document. Create a separate artboard for each distinct screen or meaningful interface state, and choose dimensions for the target device or viewport. For example, a mobile onboarding flow might use artboards for welcome, account creation, verification, and completion. Give each artboard a descriptive name, such as `Onboarding – Verification`, so the document remains navigable as the screen count grows.
+<img width="2331" height="1399" alt="emc-dashboard" src="https://github.com/user-attachments/assets/e939408d-7005-4c0f-b157-fdb353d4c0c6" />
 
-Build the interface from vector shapes, text objects, and imported raster or vector assets. Use alignment and distribution commands to establish consistent spacing, and group related objects when they form a logical unit. Give layers meaningful names rather than defaults such as `Rectangle 24`; this makes inspection and handoff easier. Lock background elements when they should not be selected during detailed editing.
 
-For repeated UI patterns, create components. A button, navigation bar, form field, or status indicator can be defined once and reused across artboards. Editing the main component updates its instances, while supported instance overrides allow local changes such as label text or imagery. Use component states when an element needs variations, for example a button with default, hover, and disabled appearances.
+> **EMCP Pro, 10% off for the GitHub community**: use code **`EMCPGIT`** at [emcptools.com/pricing](https://emcptools.com/pricing).
 
-Responsive Resize helps preserve object relationships when an artboard or component changes size, but it does not replace testing at actual breakpoints. After resizing, inspect text wrapping, padding, alignment, and image cropping at each target width. A practical workflow is to establish one reference screen, create its variants, and verify important layouts manually before sharing the design.
+<img width="2132" height="471" alt="emcp-promo-banner-new" src="https://github.com/user-attachments/assets/d2439b0b-2f56-461d-b3be-1ccc39bc2877" />
 
-## Interactive Prototyping and User Flow Validation
 
-Switch to Prototype mode when the screens are ready for interaction. Select a button, link, or other object and drag its connector to the destination artboard. Configure the trigger, action, and transition to represent the intended behavior. In a sign-in flow, selecting “Continue” might open the verification screen, while “Back” returns to the previous step. Use overlays for elements displayed above the current screen, such as menus, dialogs, and confirmation panels.
+## What it does
 
-Choose interaction settings deliberately. A tap or click is appropriate for navigation; a timed trigger can demonstrate an automatic transition; and drag interactions can represent gestures. Transitions such as dissolve or slide communicate changes in state, but should not be added merely for visual effect. Keep motion consistent and brief.
+**244 Free tools, 578 total with Pro.** These are catalog totals across all supported integrations, including 334 Pro tools. The tools available to your AI client depend on your installed plugins, selected builder, and enabled tools. See the [tool catalog](https://emcptools.com/tools/) for every tool and what it needs.
 
-Test the user journey in Preview mode. Start from the entry artboard, follow primary and secondary paths, and check that back actions, overlays, and dismiss controls work. Test error, empty, loading, and success states where they affect the flow. A prototype that demonstrates only the happy path may conceal missing requirements.
+**Build pages.** Dedicated integrations cover Elementor, Bricks, Breakdance, Avada, Divi 5, Thrive Architect, Oxygen, Kirki, WPBakery, Beaver Builder, BeBuilder and Visual Composer. Select one standalone builder while Gutenberg stays available. Spectra, Kadence Blocks, GenerateBlocks, Blocksy Blocks and Otter Blocks have independent toggles. Pro adapters expose native features verified for supported vendor versions; see each bundled skill for scope and limitations.
 
-For team review, share a prototype link or present the interactive preview, depending on the project's collaboration setup. Give reviewers a specific task, such as completing registration or changing a profile setting, and record where navigation or interface behavior is unclear. Before handoff, ensure artboards and layers are named consistently, assets are available, and interaction destinations are connected. XD prototypes illustrate intended behavior; they do not implement backend validation, API calls, data persistence, or production accessibility semantics.
+**Run the site.** Content and taxonomies, media, users, settings, plugins and themes, nav menus, the filesystem, and the database, all over MCP.
+
+**Understand and undo.** One-call page snapshots, public front-end HTML inspection, content search across your own pages and templates, a change ledger with rollback, and read-only performance and security scans that return a scored report.
+
+**Speak your plugins.** Integrations that register only when the plugin is active: ACF, Meta Box, WooCommerce, 8 form builders, 7 SEO plugins, and the Elementor addon packs. New in 3.21.1, free: Redirection, Custom Post Type UI, Pods, WP Mail SMTP, LiteSpeed Cache and Wordfence; in Pro: FluentSMTP, Flamingo, Site Kit and Ultimate Member. Pro also covers Polylang, TranslatePress, TablePress, Tutor LMS, LifterLMS, The Events Calendar, Amelia, FluentCRM, MailPoet and FunnelKit. See the [integrations directory](https://emcptools.com/integrations/).
+
+**Animate with GSAP.** Pro includes an opt-in local GSAP 3.15.0 integration: core plus all 24 distributed plugins, stable WordPress handles, context and per-plugin switches, and MCP read/write management.
+
+Elementor is **optional**. Every WordPress domain works without it; installing Elementor unlocks the page-building family.
+
+→ **[Full tool reference](https://emcptools.com/docs/tools/overview/)**
+
+## Install
+
+1. Download the latest `emcp-tools-*.zip` from [Releases](https://github.com/msrbuilds/elementor-mcp/releases/).
+2. In WordPress: **Plugins → Add New → Upload Plugin**, then activate.
+3. Open the **EMCP Tools** menu in the admin sidebar.
+
+Free installs update in place from **Dashboard → Updates**.
+
+**Requires** WordPress 6.9+ and PHP 8.1+. Elementor 3.20+ is optional (4.0+ for atomic elements). The [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/) is included (the official plugin is used instead when it is active); the Abilities API is in WordPress core.
+
+→ [Installation guide](https://emcptools.com/docs/getting-started/installation/) · [Requirements](https://emcptools.com/docs/getting-started/requirements/)
+
+## Connect your AI client
+
+The **Connection** screen in the admin walks you through four steps and generates a ready-to-paste config for your client, including a one-click `.mcpb` bundle for Claude Desktop. That is the fastest route, and it fills in your site URL and credentials for you.
+
+Step-by-step guides per client:
+
+[Claude Code](https://emcptools.com/docs/connecting/claude-code/) · [Claude Desktop](https://emcptools.com/docs/connecting/claude-desktop/) · [Cursor](https://emcptools.com/docs/connecting/cursor/) · [VS Code](https://emcptools.com/docs/connecting/vscode/) · [Antigravity](https://emcptools.com/docs/connecting/antigravity/) · [ChatGPT](https://emcptools.com/docs/connecting/chatgpt-app/) · [WP-CLI](https://emcptools.com/docs/connecting/wp-cli/) · [OAuth](https://emcptools.com/docs/connecting/oauth/) · [Multiple sites](https://emcptools.com/docs/connecting/multiple-sites/)
+
+Tools not showing up? Start with [no tools appearing](https://emcptools.com/docs/troubleshooting/no-tools-appearing/) or [tool cap exceeded](https://emcptools.com/docs/troubleshooting/tool-cap-exceeded/).
+
+## Safe by default
+
+Every tool runs a real WordPress capability check before it does anything, so an agent can only do what the authenticating user could do by hand.
+
+Anything that writes, deletes, or renders site-wide **ships disabled** and is opt-in from **EMCP Tools → Tools**. Destructive operations additionally require an explicit `confirm: true`. Administrators cannot be edited over MCP, there is no delete-user tool, and filesystem access is confined to the WordPress root with automatic backups and an audit log.
+
+→ [Permission model](https://emcptools.com/docs/tools/overview/#permission-model)
+
+## Sample prompts
+
+The [`prompts/`](prompts/) directory has five complete landing-page blueprints, design system, structure, images, and animations, that build an entire page from a single paste: [Local Business](prompts/LOCAL_BUSINESS.md), [Dental Clinic](prompts/DENTAL_CLINIC.md), [Developer Portfolio](prompts/WEB_DEVELOPER_PORTFOLIO.md), [Hair Salon](prompts/HAIR_SALON.md), [Car Wash](prompts/CAR_WASH.md).
+
+A library of 100 prompts across 20 categories, 50 landing pages and 50 complete websites, is included with [Pro](https://emcptools.com/pricing).
+
+## Contributing
+
+Bug reports, feature requests, and pull requests are all welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+1. Fork the repo
+2. Create a branch (`git checkout -b feature/amazing-tool`)
+3. Make your changes and test locally
+4. Open a Pull Request
+
+**Contributors**: [@msrbuilds](https://github.com/msrbuilds) (author and maintainer)
+
+## License
+
+[GNU General Public License v2.0 or later](LICENSE).
